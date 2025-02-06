@@ -1,0 +1,7 @@
+﻿# Убедитесь, что файл .pre-commit-config.yaml обрабатывается правильно
+*.yaml text eol=lf
+*.yml text eol=lf
+*.toml text eol=lf
+*.cfg text eol=lf
+*.txt text=auto
+.pre-commit-config.yaml text eol=lf

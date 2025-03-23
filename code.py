@@ -16,7 +16,7 @@ def generateReport(x_list):
     Generate report. Define whether x in list >= 0
     
     Args:
-        x_list (list): list of x value
+        x_list (list): list of x value. type: float
 
     Returns:
         list: result

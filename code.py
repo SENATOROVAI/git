@@ -8,4 +8,7 @@ def round_value(x):
     Returns:
         float: result
     """
-    return round(5.76543, 2)
+    return round(x, 2)
+
+
+print(str(round_value(100.2345)))

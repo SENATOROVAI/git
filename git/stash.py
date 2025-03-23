@@ -9,7 +9,10 @@
 #       jupytext_version: 1.16.4
 # ---
 
-"""Шаг 3. Git stash."""
+"""Шаг 3.
+
+Git stash.
+"""
 
 # > 0.1 записать видео по stash
 #

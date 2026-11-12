@@ -1,12 +1,12 @@
-# Пересылает события pull request в рутину Claude через API-триггер.
+# Пересылает комментарии к PR, ответы в тредах и ревью в рутину Claude «PR GIT»
+# через API-триггер. События самих PR (открытие, коммиты, правки, закрытие) рутина
+# получает от своего встроенного GitHub-триггера.
 # Нужен секрет репозитория CLAUDE_ROUTINE_TOKEN (токен API-триггера рутины).
-# pull_request_target работает в контексте основного репозитория, поэтому
-# секрет доступен и для PR из форков. Код PR здесь не запускается и не клонируется.
+# Эти события работают в контексте основного репозитория, поэтому секрет доступен
+# и для PR из форков. Код PR здесь не запускается и не клонируется.
 name: Claude routine trigger
 
 on:
-  pull_request_target:
-    types: [opened, reopened, synchronize, edited, closed]
   issue_comment:
     types: [created, edited]
   pull_request_review_comment:
